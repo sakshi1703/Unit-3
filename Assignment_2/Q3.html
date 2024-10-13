@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+        .form {
+            border-radius: 10%;
+            margin: auto;
+            height: 500px;
+            width: 500px;
+        }
+        input[type = Submit]{
+            color: black;
+            background-color: rgb(74, 190, 74);
+            margin-left: 80px;
+            border-radius: 13%;
+        }
+        .colorto {
+            width: max-content;
+            border-radius: 10%;
+            padding-right: 60px;
+            padding-top: 30px;
+            padding-left: 60px;
+            padding-bottom: 30px;
+            background-color: rgb(236, 236, 236);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <div class = "form">
+        
+    <form class = "colorto">
+        <p><b>Feedback Type</b></p>
+    <select>
+        <option>Compliment</option>
+        <option>Positve</option>
+        <option>Constructive</option>
+        <option>Specific</option>
+        <option>General</option>
+        <option>Comparative</option>
+        <option>Emotional</option>
+        <option>Peer</option>
+        <option>Technical</option>
+        <option>Actionable</option>
+    </select><br/><br/>
+    <p><b>Message</b></p>
+    <textarea name = "message" rows = "4" cols = "20"></textarea><br/><br/>
+        <p><b>Ratings</b></p>
+        <input type = "radio" id = "1" name = "rating" value = "1">
+        <label for = "1">1</label>
+        <input type = "radio" id = "2" name = "rating" value = "2">
+        <label for = "2">2</label>
+        <input type = "radio" id = "3" name = "rating" value = "3">
+        <label for = "3">3</label>
+        <input type = "radio" id = "4" name = "rating" value = "4">
+        <label for = "4">4</label>
+        <input type = "radio" id = "5" name = "rating" value = "5">
+        <label for = "5">5</label><br/><br/>
+
+        <label for = "age"><b>Age( 1-100 ): </b></label><br/>
+        <input type = "number" id = "age" name = "age" min="10" max = "100"><br/><br/>
+
+        <label for = "email"><b>Email: </b></label><br/>
+        <input type = "email" id = "email" name = "email"><br/><br/>
+
+        <label for = "password"><b>Password (Minimum 8 Characters): </b></label><br/>
+        <input type = "password" id = "password" name = "password"><br/><br/>
+
+        <label for = "url"><b>Website URL: </b></label><br/>
+        <input type = "url" id = "url" name = "url"><br/><br/>
+
+        <input type = "checkbox" id = "terms" value = terms>
+        <label for = "terms"><b>I agree for Terms and conditions mentioned</b></label><br/><br/>
+
+        
+        <input type = "submit" value = "Confirm">
+        <input type = "submit" value = "Submit"><br/>
+        
+         
+
+    </form>
+    </div>
+    
+    
+
+
+</body>
+</html>
