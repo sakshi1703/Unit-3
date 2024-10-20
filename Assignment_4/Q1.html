@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Navbar</title>
+</head>
+<style>
+    .logo{
+        display:flex;
+    }
+    .logo img{
+        height: 30px;
+        width: auto;
+        flex-shrink: 10;
+    }
+    .button {
+        width: 90px;
+        opacity: 0%;
+    }
+    .center{
+        padding: 5px;
+        border-radius: 10%;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .login{
+        border: 2px solid red;
+        color:red;
+        background-color: white;
+    }
+    .hand img {
+        height: 20px;
+        width: auto;
+    }
+    .hand {
+        background-color: rgb(220, 236, 241);
+    }
+    .nav {
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 0.2; 
+        gap: 10px;
+    }
+</style>
+<body>
+    <div class = "container">
+
+        <div class = "logo">
+            <img src="	https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp"/>
+            <button class = "center"> COURSES
+                <select  class = "button">
+                    <option value="1">Full Stack Developer</option>
+                    <option value="2">Data Structure and Analytics</option>
+                    <option value="3">Software Developer and Testing</option>
+                </select>
+            </button>
+            <img src = "data:image/png;base64,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" />
+        </div>
+
+        <div class = "nav">
+            <div>Fees & ISA</div>
+            <div>About us</div>
+            <div>Hire Frm Us</div>
+            <div>FAQ</div>
+            <div>Events</div>
+            <div class = "hand">Refer and Earn
+            <img src="https://thumbs.dreamstime.com/b/donation-charity-logo-label-hand-holding-heart-icon-vector-symbol-isolated-white-background-97894491.jpg"/>
+            </div>
+            <button class = "login">Login</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
