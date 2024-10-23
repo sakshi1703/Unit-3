@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    #container {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        gap: 20px;
+        /* border: 1px solid black; */
+        width: 20%;
+        border-radius: 20px;
+        /* height: 50%; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        margin-top: 250px;
+        margin-left: 40%;
+        padding: 40px;
+    }
+
+    #container div{
+        border-radius: 10px;
+        /* border: 1px solid red; */
+        text-align: center;
+        padding: 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #container>div:nth-child(1){
+        grid-column: 1/ span 4;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #container .black{
+        color: white;
+        background-color: black;
+    }
+
+</style>
+<body>
+    <div id="container">
+        <div id="display"></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="black">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="black">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="black">*</div>
+        <div style="background-color: red; color: white;">C</div>
+        <div>0</div>
+        <div class="black">=</div>
+        <div class="black">/</div>
+    </div>
+
+</body>
+</html>
