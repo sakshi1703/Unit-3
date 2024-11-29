@@ -1,7 +1,9 @@
 const Toggle = ()=>{
     const[toggle, setToggle] = React.useState(true)
+    const[text, setText] = React.useState("Hide")
     const handleClick=()=>{
         setToggle(!toggle)
+        setText(toggle ? "Show" : "Hide")
     }
 
     return(
@@ -9,7 +11,7 @@ const Toggle = ()=>{
             <h1 style={{color: toggle ? "black" : "white"}}> Hii click to hide</h1>
             <button 
             onClick={handleClick}
-            >Hide</button>
+            >{text}</button>
         </>
     )
 }
