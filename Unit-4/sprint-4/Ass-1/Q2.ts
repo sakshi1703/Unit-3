@@ -1,9 +1,9 @@
 
 let Identifier : string | number 
 
-function getIdentifierInfo(id: Identifier){
-    console.log("Identifier is a string. Value :" {id});
-    console.log("Identifier is a number. Value :" {id})
+function getIdentifierInfo(id: typeof Identifier){
+    console.log("Identifier is a string. Value :", id);
+    console.log("Identifier is a number. Value :", id)
 }
 
 getIdentifierInfo("ABC123"); 
