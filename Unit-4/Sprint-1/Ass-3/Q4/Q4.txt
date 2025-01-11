@@ -1,0 +1,16 @@
+
+Q) Your task is to debug and implement the following features:
+
+1)Ensure only non-empty tasks can be added.
+ans: we have to give alert message and put a condition
+if(!newTask){
+    alert("please enter task");
+    return;
+}
+using return new task will not be added
+
+2)Tasks marked as completed should have a visible strike-through.
+ans:we will provide a css called as line-throught and use toggle or ternary operator
+
+3)Ensure the "Delete Task" button always removes the correct task.
+ans: we will provide index while mappig the tasks and use filter and add all items i array except index that not matches
